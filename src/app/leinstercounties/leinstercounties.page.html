@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/leinster"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leinstercounties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Leinstercounties</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ul *ngFor="let county of counties">
+      <li>{{county}}</li>
+    </ul>
+
+    <!--this is another way of doing it-->
+    <!--<ul>
+      @for(county of counties;track county){
+      <li>{{county}}</li>
+    </ul>
+  }!-->
+</ion-content>
